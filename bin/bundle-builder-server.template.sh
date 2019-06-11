@@ -9,16 +9,16 @@
 # description: Bundle builder API server
 
 ### BEGIN INIT INFO
-# Provides:            kaltura_bundle_builder
+# Provides:            vidiun_bundle_builder
 # Required-Start:      $local_fs $remote_fs $network
 # Required-Stop:       $local_fs $remote_fs $network
 # Default-Start:       2 3 4 5
 # Default-Stop:        0 1 6
-# Short-Description:   Start/stop Kaltura Bundle-builder-api.
-# Description:         Control the Kaltura Bundle-builder-api.
+# Short-Description:   Start/stop Vidiun Bundle-builder-api.
+# Description:         Control the Vidiun Bundle-builder-api.
 ### END INIT INFO
  
-NAME="Kaltura Bundle builder API Server"
+NAME="Vidiun Bundle builder API Server"
 BUNDLE_BUILDER_PATH="@BUNDLE_BUILDER_PREFIX@"
 LOG_PATH="@LOG_DIR@"
 NODE_PATH=$BUNDLE_BUILDER_PATH"/node_modules"

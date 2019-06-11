@@ -30,7 +30,7 @@ gulp.task('build', function () {
     var params = getParams(config);
     var stream = gulp.src(params.files)
         .pipe(order([
-            sourceRoot + "/kalturaPlayer/**/*.js",
+            sourceRoot + "/vidiunPlayer/**/*.js",
             sourceRoot + "/**/*.js"
         ], {base: './'}))
         .pipe(sourcemaps.init({loadMaps: true}))
@@ -58,7 +58,7 @@ gulp.task('build', function () {
 });
 
 function getParams(config) {
-    var bundlerHeader = '/**\n* Kaltura Player lib';
+    var bundlerHeader = '/**\n* Vidiun Player lib';
     var dependencies = Object.keys(config);
     var filesArray = [];
     dependencies.forEach(function (key) {

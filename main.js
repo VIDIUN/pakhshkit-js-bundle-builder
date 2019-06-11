@@ -1,23 +1,23 @@
-require('./lib/utils/KalturaLogger');
+require('./lib/utils/VidiunLogger');
 const BundleBuilder = require('./lib/BundleBuilderApi');
 const continuationLocalStorage = require('continuation-local-storage');
 
-function KalturaMainProcess(){
+function VidiunMainProcess(){
     this.start();
 };
 
-KalturaMainProcess.prototype.start = function () {
+VidiunMainProcess.prototype.start = function () {
 
     this.namespace = continuationLocalStorage.createNamespace('bundle-builder-server');//Here just to make sure we create it only once
     var server = new BundleBuilder();
 
     process.on('SIGUSR1', function() {
-        KalturaLogger.log('Got SIGUSR1. Invoke log rotate notification.');
-        KalturaLogger.notifyLogsRotate();
+        VidiunLogger.log('Got SIGUSR1. Invoke log rotate notification.');
+        VidiunLogger.notifyLogsRotate();
     });
 
 };
 
-module.exports.KalturaMainProcess = KalturaMainProcess;
+module.exports.VidiunMainProcess = VidiunMainProcess;
 
-var KalturaProcess = new KalturaMainProcess();
+var VidiunProcess = new VidiunMainProcess();

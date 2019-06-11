@@ -1,10 +1,10 @@
 {
   "logger": {
     "debugEnabled": 0,
-    "logDir": "/opt/kaltura/playkit-js-bundle-builder/log",
-    "logName": "kaltura_bundle_builder.log",
-    "accessLogName": "kaltura_bundle_builder_access.log",
-    "errorLogName": "kaltura_bundle_builder_error.log"
+    "logDir": "/opt/vidiun/pakhshkit-js-bundle-builder/log",
+    "logName": "vidiun_bundle_builder.log",
+    "accessLogName": "vidiun_bundle_builder_access.log",
+    "errorLogName": "vidiun_bundle_builder_error.log"
   },
 
   "server": {
