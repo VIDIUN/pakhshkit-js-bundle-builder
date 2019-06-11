@@ -1,0 +1,35 @@
+{
+  "name": "bundleBuilder",
+  "version": "1.1.1",
+  "description": "",
+  "scripts": {
+    "test": "gulp  build",
+    "gulp": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "bundleBuilder": "cli.js"
+  },
+  "dependencies": {
+    "bluebird": ">=3.5.0",
+    "body-parser": "^1.17.1",
+    "config": ">=1.25.1",
+    "continuation-local-storage": "^3.2.0",
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-if": "^2.0.2",
+    "gulp-order": "^1.1.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-stream-to-promise": "^0.1.0",
+    "os": ">=0.1.1",
+    "util": "0.10.3",
+    "uuid": ">=3.0.1",
+    "yargs": "^8.0.1",
+    "yargs-parser": "^7.0.0"
+  },
+  "devDependencies": {}
+}
